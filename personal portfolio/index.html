@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1c4b37efe8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png.png" width="243" height="70" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CyberSecurity & Full-Stack developer </p>
+                <h1>Hi, I'm <span>Sai Mahesh</span><br> From India</h1>
+            </div>    
+        </div>
+    </div>
+<!-- <div id="about"> -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Full-stack developer with a cybersecurity edge—skilled in building secure, scalable web applications using modern frameworks and cloud-native technologies. Proven ability to apply security-first principles across the development lifecycle, ensuring robust, 
+                        high-performance digital products.</p> 
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Full-Stack</span><br>Full-Stack developer.</li>
+                                <li><span>CyberSecurity</span><br>Ethical Hacking and Penetration testing.</li>
+                                <li><span>Cloud security</span><br>Oracle Cloud and AWS.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jun-2025 - Jul-2025 </span><br>Cybersecurity Internship at Redynox.<br></li>
+                                <li><span>Sep-2023 - Nov-2023</span><br>Cloud Virtual Internship by AICTE.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br>Computer Science and Engineering at SRM Institute of Science and Technology.</li>
+                                <li><span>2019</span><br>Completed 12th from Sri Chaitanya Junior College.</li>
+                                <li><span>2016</span><br>Completed Schooling from Bhashyam.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Full-Stack</h2>
+                <p>Building scalable web applications from front-end to back-end using 
+                technologies like React, Node.js, Express, and databases such as MongoDB and PostgreSQL..</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-secret"></i>
+                <h2>CyberSecurity</h2>
+                <p>Securing systems and applications through ethical hacking, threat detection, 
+                encryption, and real-time monitoring to ensure robust digital protection</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud security</h2>
+                <p>Protecting cloud infrastructure and applications by implementing secure access, threat prevention, and 
+                compliance strategies across platforms like AWS and Oracle Cloud.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--languages & Tools  -->
+<div id="languages-tools">
+  <div class="container">
+    <h1 class="sub-title">Languages & Tools</h1>
+    <div class="services-list">
+      <!-- Languages -->
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Languages</h2>
+        <p>HTML5, CSS3, JavaScript, Python, C, C++, SQL</p>
+      </div>
+
+      <!-- Frontend Tools -->
+      <div>
+        <i class="fa-solid fa-desktop"></i>
+        <h2>Frontend</h2>
+        <p>React.js, Bootstrap, Tailwind CSS, Figma</p>
+      </div>
+
+      <!-- Backend Tools -->
+      <div>
+        <i class="fa-solid fa-server"></i>
+        <h2>Backend</h2>
+        <p>Node.js, Express.js, MongoDB, Firebase, PostgreSQL</p>
+      </div>
+
+      <!-- DevOps & Cloud -->
+      <div>
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <h2>Cloud & DevOps</h2>
+        <p>AWS, Oracle Cloud, Git, GitHub, Google Cloud</p>
+      </div>
+
+      <!-- Cybersecurity Tools -->
+      <div>
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>Cybersecurity</h2>
+        <p>Wireshark, Nmap, Burp Suite, Metasploit, Nessus</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- portfolio -->
+ <div id="portfolio">
+    <div class="container">
+           <h1 class="sub-title">My Work</h1>
+           <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png.png" width="650" height="400" class="work">
+                <div class="layer">
+                    <h3>Efficient Agriculture Trading Through Blockchain</h3>
+                    <p>Efficient Agriculture Trading through Blockchain refers to using blockchain technology to enhance transparency, traceability, and efficiency in the agricultural supply chain. It enables secure and verifiable tracking of 
+                    products from farm to consumer, fostering trust and streamlining trading processes</p>
+                    <a href="https://github.com/neelisaimahesh/EFFICIENT-AGRICULTURAL-TRADING-THROUGH-BLOCKCHAIN"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png.png" width="650" height="400" class="work">
+                <div class="layer">
+                    <h3>Electronic health records (EHRs)</h3>
+                    <p>Blockchain technology offers a secure and transparent way to manage electronic health records (EHRs). By using a distributed ledger, 
+                    blockchain can enhance data security, privacy, and interoperability within the healthcare system. </p>
+                    <a href="https://github.com/neelisaimahesh/Securing-Electronic-Health-Records"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png.png" width="650" height="400" class="work">
+                <div class="layer">
+                    <h3> Face Recognition-Based Attendance System</h3>
+                    <p>A facial recognition attendance system is a technology that uses facial recognition to automatically identify and record employee attendance. It replaces traditional methods like manual sign-in sheets or ID cards by using a camera to capture an individual's facial features and comparing them to a database of pre-registered faces. 
+                    If a match is found, the system logs the attendance, often integrating with other systems like HR or payroll. </p>
+                    <a href="https://github.com/neelisaimahesh/Face-Recognition-Based-Attendance-System-"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.png.png" width="650" height="400" class="work">
+                <div class="layer">
+                    <h3>Gesture Math Solver</h3>
+                    <p>A gesture math solver is a system that allows users to perform mathematical calculations using hand gestures, often captured by a webcam, instead of traditional input methods like keyboards or mice. These systems utilize 
+                    computer vision and machine learning to interpret the gestures and translate them into mathematical operations. </p>
+                    <a href="https://github.com/neelisaimahesh/Gesture_Math_Solver-main"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work5.png.png" width="650" height="400" class="work">
+                <div class="layer">
+                    <h3>Voice Assistant-SIGMA</h3>
+                    <p>SIGMA is an Voice Assistant application that uses voice recognition and natural 
+                    language processing to understand and respond to spoken commands</p>
+                    <a href="https://github.com/neelisaimahesh/My_Voice_Assistant-main"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work6.png.png" width="650" height="400" class="work">
+                <div class="layer">
+                    <h3>pharmacy management system (PMS)</h3>
+                    <p>A Pharmacy Management System (PMS) is a digital solution that automates pharmacy operations such as inventory tracking, prescription handling, billing, and customer management. It ensures accurate stock control,
+                     quick billing, and regulatory compliance while improving efficiency and reducing manual errors.</p>
+                    <a href="https://github.com/neelisaimahesh/Pharmacy_Management_System"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+           </div>
+           <a href="https://github.com/neelisaimahesh?tab=repositories" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- contact -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> saimahesh44367@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8555059299</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sai.mahesh.665291"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/NeelisaiMahesh1"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/tim_67k/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sai-mahesh-neeli-7a468b263/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/neelisaimahesh"><i class="fab fa-github"></i></a>    
+                </div>
+                <a href="images/My CV.pdf.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright<i class="fa fa-copyright" aria-hidden="true"></i> Saimahesh.</p>
+    </div>
+  </div>
+
+
+<script>
+
+    var tablinks =  document.getElementsByClassName("tab-links");
+    var tabcontents =  document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw1ptBkak03-qQsArZqaDj3QNtyYM8Af3QfIpr4cf_muGvzQhBmQE0rtOg92eNF_gmZmQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+      },5000)
+      form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
